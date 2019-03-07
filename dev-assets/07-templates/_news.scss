@@ -1,0 +1,51 @@
+.t-news {
+    background-color: $gray-light;
+    padding-top: $grid-base * 12;
+    position: relative;
+
+    @include large-up {
+        height: 380px;
+    }
+
+    &__content {
+        padding-bottom: $grid-base * 4;
+
+        @include large-up {
+            background-color: $gray-light;
+            clip-path: ellipse(68% 450px at 50% 0);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: $grid-base * 12;
+            z-index: 1030;
+        }
+    }
+
+    &__item {
+        margin-bottom: $grid-base * 4;
+
+        @include large-up {
+            margin-bottom: $grid-base * 2;
+        }
+    }
+
+    &__image {
+        margin-bottom: $grid-base * 2.5;
+        max-width: 349px;
+        position: relative;
+    }
+
+    &__badge {
+        background: $blue-gradient;
+        border-radius: $border-radius 0 0 $border-radius;
+        color: $white;
+        font-size: $font-size-5;
+        font-weight: bold;
+        padding: .5rem 1rem;
+        position: absolute;
+        right: 0;
+        top: 70%;
+        text-transform: uppercase;
+        opacity: .95;
+    }
+}

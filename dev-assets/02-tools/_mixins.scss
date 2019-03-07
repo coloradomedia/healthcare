@@ -1,0 +1,21 @@
+// = From MEDIUM to LARGE = //
+@mixin medium-up{
+    @media (min-width: #{$bp-medium}){
+        @content
+    }
+}
+
+//= From LARGE to UP =//
+
+@mixin large-up{
+    @media (min-width: #{$bp-large}){
+        @content
+    }
+}
+
+h1{
+    color: red;
+    @include medium-up{
+        color: blue;
+    }
+}

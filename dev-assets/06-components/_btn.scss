@@ -1,0 +1,72 @@
+.c-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: $border-radius;
+    display: inline-block;
+    font-size: $font-size-5;
+    font-weight: 700;
+    line-height: $line-height-base;
+    padding: .75rem 0;
+    text-align: center;
+    width: $grid-base * 22;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    &--primary {
+        background-color: $blue-light;
+        color: $blue-text;
+        transition: background-color .285s ease-in-out;
+        
+        &:hover {
+            background-color: darken($blue-light, 15%);
+            color: $white;
+        }
+    }
+
+    &--accent {
+        background-color: $green;
+        color: $white;
+
+        &:hover {
+            background-color: darken($green, 15%);
+            color: $white;
+        }
+    }
+
+    &--dark-blue {
+        background-color: $blue-dark;
+        color: $white;
+
+        &:hover {
+            background-color: darken($blue-dark, 15%);
+            color: $white;
+        }
+    }
+
+    &--light {
+        background-color: $white;
+        color: $blue-text;
+
+        &:hover {
+            background-color: darken($white, 15%);
+            color: $blue-text;
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+
+        &:hover {
+            color: darken($white, 15%);
+            border: 2px solid darken($white, 15%);
+        }
+    }
+
+}

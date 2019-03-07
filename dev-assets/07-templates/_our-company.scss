@@ -1,0 +1,35 @@
+.t-our-company {
+    padding-bottom: $grid-base * 6;
+    padding-top: $grid-base * 6;
+
+    &__left {
+        margin-bottom: $grid-base * 4;
+
+        @include medium-up {
+            margin-bottom: 0;
+        }
+    }
+
+    &__right {
+        text-align: center;
+
+        @include medium-up {
+            padding-right: $grid-base * 3;
+            text-align: right;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        margin: 0 auto;
+        margin-bottom: $grid-base * 3;
+
+        @include medium-up {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.o-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    @include medium-up {
+        flex-direction: row;
+    }
+
+    &--center-y {
+        align-items: center;
+    }
+}

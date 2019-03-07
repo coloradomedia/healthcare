@@ -1,0 +1,17 @@
+.t-our-advantages {
+    padding-top: $grid-base * 6;
+
+    &__item {
+        margin-bottom: $grid-base * 4;
+        padding: $grid-base * 2.5;
+        transition: box-shadow .275s ease-in-out;
+
+        &:hover {
+            box-shadow: #e1e1e1 0 8px 40px;
+        }
+
+        @include large-up {
+            margin-bottom: $grid-base * 8;
+        }
+    }
+}

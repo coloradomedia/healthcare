@@ -1,0 +1,29 @@
+p{
+    font-size: $font-size-5;
+    font-weight: 400;
+    padding: 0;
+    line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: $font-size-4;
+    line-height: $line-height-base;
+    margin: 0;
+}
+
+a{
+    color: $gray-dark;
+    text-decoration: none;
+    &:hover{
+        
+    }
+}
+ ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    & li {
+        font-size:  $font-size-5;
+    }
+ }

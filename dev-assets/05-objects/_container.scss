@@ -1,0 +1,13 @@
+.o-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $gutter;
+
+    @include medium-up{
+        max-width: 740px;
+    }
+
+    @include large-up{
+        max-width: 1140px;
+    }
+}

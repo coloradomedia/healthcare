@@ -1,0 +1,13 @@
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+.u-text-lg-right {
+    @include large-up {
+        text-align: right !important;
+    }
+}

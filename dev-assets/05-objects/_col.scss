@@ -1,0 +1,52 @@
+.o-col {
+    width: 100%;
+    padding: 0 $gutter;
+
+    &--md25 {
+        @include medium-up {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--md33 {
+        @include medium-up {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+
+    &--md50 {
+        @include medium-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &--lg25 {
+        @include large-up {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--lg33 {
+        @include large-up {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+
+    &--lg50 {
+        @include large-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &--lg75 {
+        @include large-up{
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+}
